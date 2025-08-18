@@ -1,0 +1,37 @@
+{
+  "name": "imports-prefix-vite-plugin",
+  "version": "0.1.0",
+  "description": "vite plugin to add a prefix to local imports in js files",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/routelit/imports-prefix-vite-plugin.git"
+  },
+  "keywords": [
+    "vite",
+    "js",
+    "ts"
+  ],
+  "devDependencies": {
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  },
+  "author": "rolangom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/routelit/imports-prefix-vite-plugin/issues"
+  },
+  "homepage": "https://github.com/routelit/imports-prefix-vite-plugin#readme",
+  "dependencies": {
+    "vitest": "^3.2.4"
+  }
+}
