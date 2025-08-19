@@ -19,23 +19,23 @@ interface ImportPrefixPluginOptions {
  * @example
  * ```ts
  * addImportPrefix({
- *   prefix: "/routelit/routelit_mantine/",
+ *   prefix: "/my-prefix/",
  * })
  * // will transform:
  * import "./file.js"
  * // to:
- * import "/routelit/routelit_mantine/file.js"
+ * import "/my-prefix/file.js"
  * ```
  * @example
  * ```ts
  * addImportPrefix({
- *   prefix: "/routelit/routelit_mantine/",
+ *   prefix: "/my-prefix/",
  *   fileRegex: /\.(js|ts|jsx|tsx)$/,
  * })
  * // will transform:
  * import * as file from "./file.js"
  * // to:
- * import * as file from "/routelit/routelit_mantine/file.js"
+ * import * as file from "/my-prefix/file.js"
  * ```
  */
 export function addImportPrefix({
