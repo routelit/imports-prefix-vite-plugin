@@ -38,7 +38,7 @@ interface ImportPrefixPluginOptions {
  * import * as file from "/my-prefix/file.js"
  * ```
  */
-export function addImportPrefix({
+function addImportPrefix({
   prefix,
   fileRegex = /\.(js|ts|jsx|tsx)$/,
 }: ImportPrefixPluginOptions): Plugin {
@@ -68,3 +68,6 @@ export function addImportPrefix({
     },
   };
 }
+
+export { addImportPrefix };
+export default { addImportPrefix };
